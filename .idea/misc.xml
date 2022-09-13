@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Project/Smartflowtech/app/src/main/res/drawable/box_border.xml" value="0.19230769230769232" />
+        <entry key="..\:/Project/Smartflowtech/app/src/main/res/drawable/splash_screen.xml" value="0.1953125" />
+        <entry key="..\:/Project/Smartflowtech/app/src/main/res/layout/activity_main.xml" value="0.17916666666666667" />
+        <entry key="..\:/Project/Smartflowtech/app/src/main/res/layout/activity_products.xml" value="0.17916666666666667" />
+        <entry key="..\:/Project/Smartflowtech/app/src/main/res/layout/color_inflator.xml" value="0.25" />
+        <entry key="..\:/Project/Smartflowtech/app/src/main/res/layout/item_inflator.xml" value="0.18" />
+        <entry key="..\:/Project/Smartflowtech/app/src/main/res/layout/product_by_item_inflator.xml" value="0.17916666666666667" />
+        <entry key="..\:/Project/Smartflowtech/app/src/main/res/layout/product_detail_fragment.xml" value="0.18" />
+        <entry key="..\:/Project/Smartflowtech/app/src/main/res/layout/product_inflator.xml" value="0.22" />
+        <entry key="..\:/Project/Smartflowtech/app/src/main/res/layout/product_list_fragment.xml" value="0.13" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_15_PREVIEW" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
