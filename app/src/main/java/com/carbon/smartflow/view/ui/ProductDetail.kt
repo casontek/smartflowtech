@@ -31,7 +31,12 @@ class ProductDetail : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val product : Product = arguments?.getParcelable("product")!!
+        binding.title.text = product.name
         displayProductInfo(product)
+        //navigates back to the previous screen
+        binding.backBT.setOnClickListener {
+            activity?.onBackPressed()
+        }
     }
 
     private fun displayProductInfo(product: Product) {

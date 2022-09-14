@@ -81,7 +81,8 @@ class ProductList : Fragment() {
         groupedData.forEach { (t, u) -> groupedByBrandType.add(u) }
         //display on the outer recyclerview
         binding.recyclerview.layoutManager = LinearLayoutManager(requireContext())
-        binding.recyclerview.adapter = ProductAdapter(requireContext(), groupedByBrandType)
+        val adapter = ProductAdapter(requireContext(), groupedByBrandType)
+        binding.recyclerview.adapter = adapter
 
     }
 
