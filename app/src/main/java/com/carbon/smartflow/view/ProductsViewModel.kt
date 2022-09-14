@@ -8,6 +8,7 @@ import com.carbon.smartflow.utils.Result
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
+import timber.log.Timber
 import javax.inject.Inject
 
 @HiltViewModel
@@ -27,17 +28,17 @@ class ProductsViewModel @Inject constructor(
                         emit(Result.success("success", products))
                     }
                     else emit(Result.error("empty product!"))
-                    Log.d("_&data", "data: ${it.body()}")
+                    Timber.i("data response[Timber]: ${it.body()}")
                 }
                 else {
                     emit(Result.error(it.message()))
                 }
-                Log.d("_&response", "response: ${it.raw().networkResponse()}")
+                Timber.i("network response[Timber]: ${it.raw().networkResponse()}")
             }
         }
         catch (e: Exception) {
             emit(Result.error("network issue."))
-            Log.d("_&error", "catch error: $e")
+            Timber.i("catch error[Timber]: $e")
         }
     }
 

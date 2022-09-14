@@ -73,7 +73,6 @@ class ProductList : Fragment() {
     private fun organiseFetchedProducts(data: List<Product>){
         //organize the products by brands
         data.map { it.brandType = "${it.brand}_${it.product_type}" }
-        Log.d("_&product", "data: ${data[0]}")
 
         data.sortedBy { it.brandType }
         val groupedData = data.groupBy { it.brandType }
